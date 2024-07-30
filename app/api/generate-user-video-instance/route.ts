@@ -15,7 +15,7 @@ const STREAM_CHAT_SECRET_KEY = process.env.NEXT_PUBLIC_STREAM_CHAT_SECRET_KEY!;
 
 // in favour of this...
 
-export const bodyParser = true;
+export const dynamic = 'auto';
 
 export async function POST(req: NextRequest) {
     try {

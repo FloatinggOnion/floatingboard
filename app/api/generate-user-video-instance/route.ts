@@ -4,11 +4,18 @@ import { StreamChat } from "stream-chat";
 const STREAM_CHAT_API_KEY = process.env.NEXT_PUBLIC_STREAM_CHAT_API_KEY!;
 const STREAM_CHAT_SECRET_KEY = process.env.NEXT_PUBLIC_STREAM_CHAT_SECRET_KEY!;
 
-export const config = {
-    api: {
-        bodyParser: true,
-    },
-};
+
+// remove this...
+
+// export const config = {
+//     api: {
+//         bodyParser: true,
+//     },
+// };
+
+// in favour of this...
+
+export const bodyParser = true;
 
 export async function POST(req: NextRequest) {
     try {

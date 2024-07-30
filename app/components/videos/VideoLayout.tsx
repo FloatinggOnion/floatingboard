@@ -39,7 +39,7 @@ import {
       <StreamTheme>
         <div className='grid grid-cols-2 xl:grid-cols-1 gap-10 xl:gap-4 text-white capitalize'>
           <LocalParticipantVideo participant={localParticipant} />
-          <RemoteParticipantVideoList participants={remoteParticipants} />
+      <RemoteParticipantVideoList participants={remoteParticipants} />
         </div>
       </StreamTheme>
     );
